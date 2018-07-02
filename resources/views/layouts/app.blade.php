@@ -48,8 +48,11 @@
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @else
-                            <li class="nav-item dropdown">
-                                <a class="nav-link">Balance 0.00 VC </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('home') }}">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('transactions.index') }}">Transaction</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

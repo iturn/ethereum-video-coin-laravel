@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a>Blockchain based pay per view video payment service</a>
+                    <a>Blockchain based pay per view video micro-payment service</a>
                 </div>
             </div>
         </div>

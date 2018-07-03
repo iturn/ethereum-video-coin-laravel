@@ -29,7 +29,7 @@ class TransactionController extends Controller
     $fromAccount = $this->activeAccount()->address;
     $toAccount = $transaction['toAddress'];
     // ethers are in gwei(E-18) to temporailty go to 'visible ethers of 0.1 ETH' E+16
-    $amount = (int)$transaction['amount'] * 10000000000000000;
+    $amount = (int)$transaction['amount'] * 100000000000000000;
 
     $web3 = new Web3(env('WEB3_HOST', 'http://localhost:8545'));
     $web3->eth->sendTransaction(
